@@ -3,35 +3,31 @@ import torch
 import random
 import json
 import torch.nn as nn
-# from model import NeuralNet
+from model import NeuralNet  # Ensure this import works by placing model.py in the same directory
 from nltk_utils import tokenize, stem, bag_of_words
+import os
 
-class NeuralNet(nn.Module):
-    def __init__(self, input_size, hidden_size, output_size):
-        super(NeuralNet, self).__init__()
-        self.l1 = nn.Linear(input_size, hidden_size)
-        self.l2 = nn.Linear(hidden_size, hidden_size)
-        self.l3 = nn.Linear(hidden_size, output_size)
-        self.relu = nn.ReLU()
-
-    def forward(self, x):
-        out = self.l1(x)
-        out = self.relu(out)
-        out = self.l2(out)
-        out = self.relu(out)
-        out = self.l3(out)
-        return out
+# Ensure paths are correct for deployment
+# If running locally, you should be able to access the files directly in the same directory
+current_directory = os.getcwd()
+model_path = os.path.join(current_directory, "data.pth")
+intents_path = os.path.join(current_directory, "intents.json")
 
 # ----------------------------
 # Load the trained chatbot model
 # ----------------------------
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-with open("intents.json", "r") as f:
+# Load intents (ensure file exists in the correct path)
+with open(intents_path, "r") as f:
     intents = json.load(f)
 
-# Load trained model parameters
-data = torch.load("data.pth")
+# Load trained model parameters (ensure file exists in the correct path)
+if os.path.exists(model_path):
+    data = torch.load(model_path)
+else:
+    st.error(f"Model file '{model_path}' not found!")
+    st.stop()
 
 input_size = data["input_size"]
 hidden_size = data["hidden_size"]
@@ -40,6 +36,7 @@ all_words = data["all_words"]
 tags = data["tags"]
 model_state = data["model_state"]
 
+# Initialize the model
 model = NeuralNet(input_size, hidden_size, output_size).to(device)
 model.load_state_dict(model_state)
 model.eval()
