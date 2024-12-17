@@ -7,7 +7,7 @@ from model import NeuralNet  # Ensure this import works by placing model.py in t
 from nltk_utils import tokenize, stem, bag_of_words
 import os
 import nltk
-nltk.download('punkt_tab')
+nltk.download('punkt')
 
 # Ensure paths are correct for deployment
 current_directory = os.getcwd()
