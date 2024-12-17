@@ -1,9 +1,12 @@
 import json
 import numpy as np
+import nltk
 import torch
 import torch.nn as nn
 from torch.utils.data import Dataset, DataLoader
 from nltk_utils import tokenize, stem, bag_of_words
+nltk.download('punkt')
+
 
 # Define the model
 class NeuralNet(nn.Module):
