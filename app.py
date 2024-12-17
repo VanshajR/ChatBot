@@ -2,8 +2,24 @@ import streamlit as st
 import torch
 import random
 import json
-from model import NeuralNet
+# from model import NeuralNet
 from nltk_utils import tokenize, stem, bag_of_words
+
+class NeuralNet(nn.Module):
+    def __init__(self, input_size, hidden_size, output_size):
+        super(NeuralNet, self).__init__()
+        self.l1 = nn.Linear(input_size, hidden_size)
+        self.l2 = nn.Linear(hidden_size, hidden_size)
+        self.l3 = nn.Linear(hidden_size, output_size)
+        self.relu = nn.ReLU()
+
+    def forward(self, x):
+        out = self.l1(x)
+        out = self.relu(out)
+        out = self.l2(out)
+        out = self.relu(out)
+        out = self.l3(out)
+        return out
 
 # ----------------------------
 # Load the trained chatbot model
