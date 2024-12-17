@@ -1,351 +1,178 @@
 {
-    "context":{
-        "talking_about":null
+    "context": {
+        "talking_about": null
     },
-    "intents":[
+    "intents": [
         {
-            "tag":"greeting",
-            "patterns":[
+            "tag": "greeting",
+            "patterns": [
                 "Hi",
                 "Hello",
                 "Hey",
                 "Hola",
                 "How are you",
-                "Good morning",
-                "Good evening",
-                "Good afternoon",
                 "Yo",
-                "What's up",
-                "Howdy",
-                "How's it going",
-                "Hi there",
-                "Hello there",
-                "Hey there",
-                "Hiya"
+                "Who are you?"
             ],
-            "responses":[
-                "Hello! How can I help you?",
-                "Hi! How may I assist you?",
-                "Hey! Thanks for visiting!",
-                "Hi there!",
-                "Hello there!",
-                "Hey there!",
-                "Howdy!",
-                "How's it going?",
-                "Yo to you as well!",
-                "What's up?",
-                "Hola!",
-                "Good morning!",
-                "Good afternoon!",
-                "Good evening!"
+            "responses": [
+                "Hello! I'm Cypher, a chatbot. How can I assist you?",
+                "Hi there, I am a Cypher, chatbot who answers questions about Vanshaj! What would you like to know about him?",
+                "Hey! I am a chatbot named Cypher. Feel free to ask me anything about Vanshaj."
             ]
         },
         {
-            "tag":"goodbye",
-            "patterns":[
+            "tag": "goodbye",
+            "patterns": [
                 "Goodbye",
                 "Bye",
-                "See you later",
-                "Later",
-                "Catch you later",
-                "Cya",
-                "Adios",
-                "Farewell",
-                "Take care",
-                "Goodnight",
-                "Have a good one",
-                "Peace out",
-                "Bye bye",
-                "See ya",
-                "See you soon",
-                "See you later alligator",
-                "In a while crocodile"
+                "See you later"
             ],
-            "responses":[
-                "Goodbye! Have a great day!",
-                "Bye! Take care!",
-                "See you later!",
-                "Later!",
-                "Catch you later!",
-                "Adios!",
-                "Farewell!",
-                "Take care!",
-                "Goodnight!",
-                "Have a good one!",
-                "Peace out!",
-                "Bye bye!",
-                "See ya!",
-                "See you soon!",
-                "See you later alligator!",
-                "In a while crocodile!"
+            "responses": [
+                "Goodbye! Feel free to return if you have more questions.",
+                "Bye! Have a great day!"
             ]
         },
         {
-            "tag":"thanks",
-            "patterns":[
+            "tag": "capability",
+            "patterns": [
+                "What can you do?",
+                "What is your purpose?",
+                "What are you capable of?",
+                "What can you do for me?",
+                "What can you tell me?",
+                "What can you tell about him?"
+            ],
+            "responses": [
+                "I can tell you about Vanshaj's education, skills, projects, portfolio, socials and experience. Feel free to ask!"
+            ]
+        },
+        {
+            "tag": "about_vanshaj",
+            "patterns": [
+                "Who is Vanshaj Raghuvanshi?",
+                "Tell me about Vanshaj",
+                "What does Vanshaj do?",
+                "Who is he?"
+            ],
+            "responses": [
+                "Vanshaj Raghuvanshi is a third-year Computer Science and Engineering student at Thapar Institute of Engineering and Technology. I can tell you more about his education, skills, projects, portfolio, socials and experience. Feel free to ask!",
+                "Vanshaj Raghuvanshi is a passionate computer science student with expertise in Python, ReactJS, and machine learning. I can provide more details about his education, skills, experience, projects and socials. Just ask!"
+            ]
+        },
+        {
+            "tag": "education",
+            "patterns": [
+                "What is Vanshaj's education?",
+                "Where does Vanshaj study?",
+                "Tell me about his education background"
+            ],
+            "responses": [
+                "Vanshaj is currently pursuing a Bachelor of Technology (B.Tech) in Computer Science and Engineering at Thapar Institute of Engineering and Technology.",
+                "Vanshaj studies Computer Science and Engineering at TIET and is currently in his third year."
+            ]
+        },
+        {
+            "tag": "skills",
+            "patterns": [
+                "What skills does Vanshaj have?",
+                "Tell me about Vanshaj's skills",
+                "What is Vanshaj good at?",
+                "What are his skills?"
+            ],
+            "responses": [
+                "Vanshaj has expertise in Python, Java, JavaScript, C/C++, machine learning, OpenCV, SQL and NoSQL databases, AWS and is currently learning Generative AI."
+            ]
+        },
+        {
+            "tag": "projects",
+            "patterns": [
+                "What projects has Vanshaj worked on?",
+                "Tell me about Vanshaj's projects",
+                "Any interesting work by Vanshaj?",
+                "What can you tell me about his projects?",
+                "What are Vanshaj's projects?"
+            ],
+            "responses": [
+                "Some of Vanshaj's projects include a pneumonia detection system using CNNs and ensemble learning, hosted through streamlit: https://pneumonia-vanshajr.streamlit.app , an android app written in Java, an object detection application, applications involving databases such as PosgreSQL etc, please check his GitHub for more: [GitHub](https://github.com/VanshajR). "
+            ]
+        },
+        {
+            "tag": "experience",
+            "patterns": [
+                "Does Vanshaj have any work experience?",
+                "Tell me about Vanshaj's work experience",
+                "Where has Vanshaj worked?",
+                "What is his experience?",
+                "What can you tell me about his work experience?",
+                "Where has he worked?"
+            ],
+            "responses": [
+                "Vanshaj is gaining hands-on experience through personal projects and collaborations, focusing on AI, ML, and web development. He has done an internship at Meril, where he assisted with development of AI and machine learning models. Besides this, he has done project based internships at Techplement and CodeClause, while also having interned with the NGO, Kshitiksha Foundation, to contribute to their goal of social welfare. He is actively looking for more internship opportunities to further his skills and experience. Moreover, he has also been the Technical Head at Backslash Computing Society, TIET, and is currently the Technical Lead at the Thapar Institute Counselling Cell."
+            ]
+        },
+        {
+            "tag": "portfolio",
+            "patterns": [
+                "Where can I see Vanshaj's work?",
+                "Does Vanshaj have a portfolio?",
+                "Show me Vanshaj's projects",
+                "Does he have a portfolio?",
+                "Where can I see his work?"
+            ],
+            "responses": [
+                "You can explore Vanshaj's portfolio here: https://vanshajraghuvanshi.tech .",
+                "Check out Vanshaj's work on his portfolio: https://vanshajraghuvanshi.tech ."
+            ]
+        },
+        {
+            "tag": "github",
+            "patterns": [
+                "What is Vanshaj's GitHub?",
+                "Show me Vanshaj's GitHub",
+                "Where can I see his code?",
+                "What is his GitHub?"
+            ],
+            "responses": [
+                "You can check out Vanshaj's GitHub repositories here: https://github.com/VanshajR .",
+                "Explore Vanshaj's code and projects on GitHub: https://github.com/VanshajR ."
+            ]
+        },
+        {
+            "tag": "linkedin",
+            "patterns": [
+                "Does Vanshaj have a LinkedIn?",
+                "What is Vanshaj's LinkedIn?",
+                "Show me his LinkedIn profile"
+            ],
+            "responses": [
+                "You can connect with Vanshaj on LinkedIn here: https://linkedin.com/in/vanshajraghuvanshi .",
+                "Here's Vanshaj's LinkedIn profile: https://linkedin.com/in/vanshajraghuvanshi ."
+            ]
+        },
+        {
+            "tag": "socials",
+            "patterns": [
+                "What are his socials?",
+                "What are Vanshaj's social accounts?",
+                "How can I connect with him?",
+                "How can I contact Vanshaj?",
+                "Does Vanshaj have social media?"
+            ],
+            "responses": [
+                "Here are his socials:\nLinkedIn: https://linkedin.com/in/vanshajraghuvanshi \n GitHub: https://github.com/VanshajR \n Portfolio: https://vanshajraghuvanshi.tech \nEmail: vanshajraghuvanshi@gmail.com"
+            ]
+        },
+        {
+            "tag": "thanks",
+            "patterns": [
                 "Thanks",
                 "Thank you",
-                "Thank you very much",
-                "Thanks a lot",
-                "Thanks so much",
-                "Thank you so much",
-                "Thank you very much",
-                "Thank you for your help",
-                "Thanks for your help",
-                "Thanks for the help",
-                "Thank you for the help",
-                "Thanks for helping me",
-                "Thank you for helping me",
-                "Thanks for the support",
-                "Thank you for the support",
-                "Thanks for the assistance",
-                "Thank you for the assistance",
-                "Thanks for the information",
-                "Thank you for the information",
-                "Thanks for the advice",
-                "Thank you for the advice",
-                "Thanks for the guidance",
-                "Thank you for the guidance",
-                "Thanks for the tips",
-                "Thank you for the tips",
-                "Thanks for the feedback",
-                "Thank you for the feedback",
-                "Thanks for the response",
-                "Thank you for the response",
-                "Thanks for the reply",
-                "Thank you for the reply",
-                "Thanks for the chat",
-                "Thank you for the chat",
-                "Thanks for the conversation",
-                "Thank you for the conversation",
-                "Thanks for the talk",
-                "Thank you for the talk",
-                "Thanks for the discussion"
+                "That's helpful"
             ],
-            "responses":[
-                "You're welcome!",
-                "No problem!",
-                "No worries!",
-                "My pleasure!",
-                "It was nothing!",
-                "Don't mention it!",
-                "Anytime!",
-                "Glad to help!",
-                "Happy to help!",
-                "You're welcome! Is there anything else I can assist you with?"
-            ]
-        },
-        {
-            "tag":"capabilities",
-            "patterns":[
-                "What can you do",
-                "What are your capabilities",
-                "What are your functions",
-                "What are your features"
-            ],
-            "responses":[
-                "I am a chatbot designed to assist you with your questions about Vanshaj. You can ask me about his education, work experience, skills, projects, interests, favorites, and more. How can I help you today?"
-            ]
-        },
-        {
-            "tag":"about_me",
-            "patterns":[
-                "Who are you",
-                "What are you",
-                "Introduce yourself",
-                "Tell me about yourself",
-                "What's your name"
-
-            ],
-            "responses":[
-                "I am Axiom, a chatbot designed to assist you with your questions about Vanshaj. How can I help you today?",
-                "I am Axiom, a chatbot created by Vanshaj Raghuvanshi. How can I assist you today?",
-                "My name is Axiom. I am a chatbot designed to help you with your queries regarding my creator. How can I assist you today?"
-            ]
-        },
-        {
-            "tag":"creator",
-            "patterns":[
-                "Who is your creator",
-                "Who created you",
-                "Who made you",
-                "Who is your developer",
-                "Who is your designer",
-                "Who is your programmer",
-                "Who is your coder",
-                "Who were you created by"
-
-            ],
-            "responses":[
-                "I was created by Vanshaj Raghuvanshi. He is a software developer and currently an engineering student.",
-                "My creator is Vanshaj Raghuvanshi. He is a software developer and an engineering student.",
-                "Vanshaj Raghuvanshi is my creator. He is a software developer and an engineering student."
-            ]
-        },
-        {
-            "tag":"vanshaj",
-            "patterns":[
-                "Who is Vanshaj",
-                "Who is Vanshaj Raghuvanshi",
-                "Tell me about Vanshaj",
-                "What do you know about Vanshaj",
-                "What can you tell me about Vanshaj"
-            ],
-            "responses":[
-                "What specifically would you like to know about Vanshaj's experience, expertise, interests, favorites, education, contacts, or work experience?"
-            ],
-            "context_set" : {
-                "talking_about":"vanshaj"
-            }
-        },
-        {
-            "tag":"vanshaj_education",
-            "context_check": {
-                "talking_about":"vanshaj"
-            },
-            "patterns":[
-                "What is Vanshaj's educational background",
-                "What is Vanshaj's education",
-                "Where did Vanshaj study",
-                "What did Vanshaj study",
-                "What is Vanshaj's degree",
-                "Tell me about Vanshaj's education",
-                "What are Vanshaj's qualifications",
-                "What is Vanshaj's academic background"
-            ],
-            "responses":[
-                "Vanshaj is currently pursuing a Bachelor's degree in Computer Science and Engineering. He is a student at Thapar Institute of Engineering and Technology, Patiala.",
-                "Vanshaj is a student at Thapar Institute of Engineering and Technology, Patiala, pursuing a Bachelor's degree in Computer Science and Engineering.",
-                "Vanshaj is studying Computer Science and Engineering at Thapar Institute of Engineering and Technology, Patiala.",
-                "He is currently pursuing a Bachelor's degree in Computer Science and Engineering at Thapar Institute of Engineering and Technology, Patiala.",
-                "His schooling was done at Delhi Public School, Dehradun. Currently he is pursuing a Bachelor's degree in Computer Science and Engineering at Thapar Institute of Engineering and Technology, Patiala."
-            ]
-        },
-        {
-            "tag":"vanshaj_work_experience",
-            "context_check": {
-                "talking_about":"vanshaj"
-            },
-            "patterns":[
-                "What is Vanshaj's work experience",
-                "What is Vanshaj's professional experience",
-                "Where has Vanshaj worked",
-                "What companies has Vanshaj worked for",
-                "What is Vanshaj's work experience",
-                "Tell me about Vanshaj's work history"
-            ],
-            "responses":[
-                "Vanshaj has worked as the technical head of Backslash Computing Society, TIET, where he successfully led a team to develop the website for a 3 day event which was hosted through AWS and served 300k+ requests and withstood over 25k attacks in under 24 hours, and boasting 100% uptime during the course of the event; he has also done internships at organisations such as Techplement and CodeClause in fields such as Artificial Intelligence and Python Development; he has interned with the NGO, Kshitiksha Foundation, to contribute to their goal of social welfare. He is actively looking for more internship opportunities to further his skills and experience."
-            ]
-        },
-        {
-            "tag":"vanshaj_skills",
-            "context_check": {
-                "talking_about":"vanshaj"
-            },
-            "patterns":[
-                "What are Vanshaj's skills",
-                "What skills does Vanshaj have",
-                "What is Vanshaj good at",
-                "What are Vanshaj's areas of expertise",
-                "What are Vanshaj's technical skills",
-                "What are Vanshaj's programming skills",
-                "What are Vanshaj's software skills",
-                "What are Vanshaj's coding skills",
-                "What are Vanshaj's language skills",
-                "What are Vanshaj's development skills",
-                "What are Vanshaj's design skills",
-                "What are Vanshaj's engineering skills",
-                "What are Vanshaj's technology skills",
-                "What are Vanshaj's IT skills",
-                "What are Vanshaj's computer skills",
-                "What are Vanshaj's software development skills",
-                "What are Vanshaj's software engineering skills",
-                "What are Vanshaj's programming languages",
-                "What are Vanshaj's coding languages",
-                "What all does Vanshaj know in the field of technology",
-                "What all does Vanshaj know in the field of software"
-            ],
-            "responses":[
-                "Vanshaj has expertise in programming languages such as Python, Java, C++, and JavaScript; his primary field of expertise is Python Development and applications such as Computer Vision, Artificial Intelligence, Machine Learning, backend development etc. He is proficient in web development technologies like HTML, CSS, and has experience working with React; he has experience in software development, leading and maganing project development, and has a strong foundation in data structures and algorithms. He also has experience with hosting sites on AWS with nginx. You can see his skills on this site itself."
-            ]
-        },
-        {
-            "tag":"vanshaj_projects",
-            "context_check": {
-                "talking_about":"vanshaj"
-            },
-            "patterns":[
-                "What projects has Vanshaj worked on",
-                "What are Vanshaj's projects",
-                "Tell me about Vanshaj's projects",
-                "What are Vanshaj's personal projects",
-                "What are Vanshaj's coding projects",
-                "What are Vanshaj's software projects",
-                "What are Vanshaj's programming projects",
-                "What are Vanshaj's development projects",
-                "What projects has Vanshaj worked on",
-                "Which projects has Vanshaj completed"
-            ],
-            "responses":[
-                "Vanshaj has worked on a variety of projects in the fields of Artificial Intelligence, Machine Learning, Computer Vision, Web Development, and Software Development. Some of his notable projects include  a Face Recognition System, a Chatbot, a Personal Portfolio Website, an Android app that solves a system of linear equations, and a Hospital Management Application. He also led the development of a website for a 3 day event hosted ny Backslash Computing Society, TIET, which featured an online cryptic hunt, and displayed robustness against attacks and a large amount of requests. You can find more details about his projects on his personal website."
-            ]
-        },
-        {
-            "tag":"vanshaj_interests",
-            "context_check": {
-                "talking_about":"vanshaj"
-            },
-            "patterns":[
-                "What does Vanshaj like",
-                "What are Vanshaj's interests",
-                "What are Vanshaj's hobbies",
-                "What are Vanshaj's passions",
-                "What does Vanshaj enjoy"
-            ],
-            "responses":[
-                "Besides the field of technology, Vanshaj loves stories, in the form of books, movies, web series, or anime, he enjoys good stories, especially those of mystery, magic and adventure. He is also a fan of music, and enjoys listening to a variety of genres. He also enjoys sports, having played a lot during his childhood. He also enjoys playing video games, and is very enthusiastic about FPS games while enjoying RPGs with good storylines. He also enjoys learning new things, and is always looking to expand his knowledge and skills. He also has his geeky side with being a fan of Marvel and DC comics, Harry Potter, and is a big time Game of Thrones fan, among more fandoms."
-            ]
-        },
-        {
-            "tag":"vanshaj_favourites",
-            "context_check": {
-                "talking_about":"vanshaj"
-            },
-            "patterns":[
-                "What are Vanshaj's favourite things",
-                "What are Vanshaj's favourite books",
-                "What are Vanshaj's favourite movies",
-                "What are Vanshaj's favourite web series",
-                "What are Vanshaj's favourite anime",
-                "What are Vanshaj's favourite genres"
-            ],
-            "responses":[
-                "Vanshaj's favourite books include the Harry Potter series, the Famous Five series, the Peculiar Children series. His favourite movies include the Harry Potter series, the Spiderverse movies, the Marvel Cinematic Universe movies (until Endgame), the How to train your Dragon trilogy, and the Dark Knight trilogy, and he loves many Dreamworks and Pixar movies as well. His favourite web series include Game of Thrones, Loki, Supernatural, and The Boys. His favourite anime is more difficult to decide so just check out his myanimelist account: https://myanimelist.net/profile/VanshajR. His favourite genres include fantasy, mystery, thriller, sci-fi, and adventure."
-            ]
-        },
-        {
-            "tag":"vanshaj_contact",
-            "context_check": {
-                "talking_about":"vanshaj"
-            },
-            "patterns":[
-                "How can I contact Vanshaj",
-                "How can I reach Vanshaj",
-                "What is Vanshaj's email",
-                "How can I talk to Vanshaj",
-                "What is Vanshaj's phone number",
-                "How can I get in touch with Vanshaj",
-                "How can I connect with Vanshaj",
-                "How can I message Vanshaj",
-                "How can I call Vanshaj",
-                "How can I email Vanshaj",
-                "How can I contact Vanshaj Raghuvanshi"
-            ],
-            "responses":[
-                "You can contact Vanshaj via email at vanshajraghuvanshi@gmail.com, or connect with him on LinkedIn at https://www.linkedin.com/in/vanshajraghuvanshi/."
+            "responses": [
+                "You're welcome! Let me know if you have more questions.",
+                "Glad I could help!"
             ]
         }
-
     ]
 }
