@@ -6,6 +6,8 @@ import torch.nn as nn
 from model import NeuralNet  # Ensure this import works by placing model.py in the same directory
 from nltk_utils import tokenize, stem, bag_of_words
 import os
+import nltk
+nltk.download('punkt_tab')
 
 # Ensure paths are correct for deployment
 current_directory = os.getcwd()
@@ -41,9 +43,7 @@ model = NeuralNet(input_size, hidden_size, output_size).to(device)
 model.load_state_dict(model_state)
 model.eval()
 
-# ----------------------------
 # Helper function to get chatbot response
-# ----------------------------
 def get_response(user_input):
     sentence = tokenize(user_input)
     X = bag_of_words(sentence, all_words)
@@ -64,9 +64,7 @@ def get_response(user_input):
                 return random.choice(intent["responses"])
     return "Sorry, I didn't understand that. Can you rephrase?"
 
-# ----------------------------
 # Streamlit UI for chatbot
-# ----------------------------
 st.title("🤖 Chat with Cypher")
 st.write("Ask me anything about Vanshaj Raghuvanshi!")
 
