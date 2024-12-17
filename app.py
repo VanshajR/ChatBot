@@ -8,7 +8,6 @@ from nltk_utils import tokenize, stem, bag_of_words
 import os
 
 # Ensure paths are correct for deployment
-# If running locally, you should be able to access the files directly in the same directory
 current_directory = os.getcwd()
 model_path = os.path.join(current_directory, "data.pth")
 intents_path = os.path.join(current_directory, "intents.json")
@@ -24,7 +23,8 @@ with open(intents_path, "r") as f:
 
 # Load trained model parameters (ensure file exists in the correct path)
 if os.path.exists(model_path):
-    data = torch.load(model_path)
+    # Modify torch.load to use map_location to load on CPU if CUDA is not available
+    data = torch.load(model_path, map_location=device)
 else:
     st.error(f"Model file '{model_path}' not found!")
     st.stop()
