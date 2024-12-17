@@ -2,6 +2,7 @@ import streamlit as st
 import torch
 import random
 import json
+import torch.nn as nn
 # from model import NeuralNet
 from nltk_utils import tokenize, stem, bag_of_words
 
