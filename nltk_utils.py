@@ -1,7 +1,7 @@
 import nltk
 import numpy as np
 from nltk.stem.lancaster import LancasterStemmer
-nltk.download('punkt')
+nltk.download('punkt_tab')
 
 stemmer = LancasterStemmer()
 

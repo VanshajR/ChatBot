@@ -10,7 +10,7 @@ import nltk
 
 # Download the punkt tokenizer (ensure it's available)
 try:
-    nltk.download('punkt')
+    nltk.download('punkt_tab')
 except LookupError as e:
     st.error(f"NLTK resource download failed: {e}")
 
