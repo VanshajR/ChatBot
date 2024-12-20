@@ -15,9 +15,9 @@
                 "Who are you?"
             ],
             "responses": [
-                "Hello! I'm Cypher, a chatbot. How can I assist you?",
+                "Hello! I'm Cypher, a chatbot who answers questions about Vanshaj. How can I assist you?",
                 "Hi there, I am a Cypher, chatbot who answers questions about Vanshaj! What would you like to know about him?",
-                "Hey! I am a chatbot named Cypher. Feel free to ask me anything about Vanshaj."
+                "Hey! I am a chatbot named Cypher. Feel free to ask me about Vanshaj."
             ]
         },
         {
@@ -77,7 +77,8 @@
                 "What skills does Vanshaj have?",
                 "Tell me about Vanshaj's skills",
                 "What is Vanshaj good at?",
-                "What are his skills?"
+                "What are his skills?",
+                "Tell me about his skills"
             ],
             "responses": [
                 "Vanshaj has expertise in Python, Java, JavaScript, C/C++, machine learning, OpenCV, SQL and NoSQL databases, AWS and is currently learning Generative AI."
@@ -117,7 +118,8 @@
                 "Does Vanshaj have a portfolio?",
                 "Show me Vanshaj's projects",
                 "Does he have a portfolio?",
-                "Where can I see his work?"
+                "Where can I see his work?",
+                "Tell me about his portfolio"
             ],
             "responses": [
                 "You can explore Vanshaj's portfolio here: https://vanshajraghuvanshi.tech .",
