@@ -38,7 +38,7 @@ Ensure you have Python 3.8+ installed.
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/VanshajR/chatbot-with-streamlit.git
+   git clone https://github.com/VanshajR/ChatBot.git
    cd chatbot-with-streamlit
    ```
 
