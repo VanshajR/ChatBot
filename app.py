@@ -69,7 +69,7 @@ def get_response(user_input):
         for intent in intents["intents"]:
             if intent["tag"] == tag:
                 return random.choice(intent["responses"])
-    return "Sorry, I didn't understand that. Can you rephrase?"
+    return "Sorry, I can only answer limited questions about Vanshaj to protect his privacy, could you rephrase your query?"
 
 # ----------------------------
 # Streamlit UI for chatbot
