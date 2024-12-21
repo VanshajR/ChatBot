@@ -78,7 +78,8 @@
                 "Tell me about Vanshaj's skills",
                 "What is Vanshaj good at?",
                 "What are his skills?",
-                "Tell me about his skills"
+                "Tell me about his skills",
+                "What is his technical expertise?"
             ],
             "responses": [
                 "Vanshaj has expertise in Python, Java, JavaScript, C/C++, machine learning, OpenCV, SQL and NoSQL databases, AWS and is currently learning Generative AI."
