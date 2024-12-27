@@ -8,7 +8,7 @@ from nltk_utils import tokenize, stem, bag_of_words
 import os
 import nltk
 
-icon_path=os.path.join(os.getcwd(), 'icon.png')
+icon_path=os.path.join(os.getcwd(), 'icon.ico')
 st.set_page_config(page_title="Cypher Chatbot", page_icon=icon_path)
 # Download the punkt tokenizer (ensure it's available)
 try:
