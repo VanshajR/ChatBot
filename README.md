@@ -62,7 +62,7 @@ Ensure you have Python 3.8+ installed.
 ## Usage
 
 - Modify the `intents.json` file to customize the chatbot's understanding of queries and responses.
-- Train the chatbot model using `model.py` if you make significant changes to intents or data.
+- Train the chatbot model using `model.py` to suit your data.
 
 ---
 
