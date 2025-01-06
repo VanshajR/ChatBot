@@ -1,7 +1,9 @@
 
 # Chatbot with Streamlit Interface
 
-This project implements a chatbot capable of answering questions about me. The chatbot leverages a custom-trained model and is deployed using a **Streamlit** web application for an intuitive user interface. Check it out here: [Cypher](https://cypher-chat.streamlit.app/)
+This project implements a chatbot capable of answering questions about me. The chatbot leverages a custom-trained model and is deployed using a **Streamlit** web application for an intuitive user interface. Check it out here:
+
+[![Cypher](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://cypher-chat.streamlit.app/)
 
 ## Features
 
